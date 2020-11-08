@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, rgb(255, 175, 3), rgb(223, 10, 98));
+    color: white;
+    min-height: 100vh;
+}
+
+header,
+form {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-size: 40px;
+}
+
+form input,
+form button {
+    padding: 10px;
+    border: none;
+    font-size: 24px;
+    background: white;
+    outline: none;
+}
+
+form button {
+    color: blue;
+    background-color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: white;
+    background-color: rgb(43, 77, 122);
+}
+
+
+/* ----------------New Dynamic Container----------------- */
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list {
+    min-width: 25%;
+    list-style: none;
+}
+
+.todo {
+    margin: 8px;
+    font-size: 24px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.check-btn,
+.delete-btn {
+    background-color: rgb(96, 129, 96);
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+
+.delete-btn {
+    background-color: rgb(223, 13, 13);
+}
+
+.todo-item {
+    margin: 0 8px;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
